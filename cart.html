@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>بيئة تعليم مصغر Shopping Cart</title>
+  <link rel="icon" href="css/hero-bg-2.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+      <div class="logo">بيئة تعليم مصغر <span>FruitShop</span></div>
+
+      
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+
+        </ul>
+      
+        <!-- CART ICON -->
+        <a href="cart.html" class="cart-icon">
+          🛒
+          <span class="cart-count">2</span>
+        </a>
+      </nav>
+
+<section class="cart-page">
+  <h2>Your Cart</h2>
+
+  <div class="cart-item">
+    <!-- <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"> -->
+    <img src="css/3.jfif">
+    <div>
+      <h4>Fresh Apples</h4>
+      <p>$5 / Kg</p>
+    </div>
+    <span>$5</span>
+  </div>
+  <!--  -->
+  <!-- QUANTITY -->
+  <div class="quantity">
+    <button onclick="decreaseQty()">−</button>
+    <span id="qty">1</span>
+    <button onclick="increaseQty()">+</button>
+  
+
+  <!-- ITEM TOTAL -->
+  <span class="item-total">$<span id="itemTotal">5</span></span>
+</div>
+
+<div class="cart-total">
+  <h3>Total: $<span id="cartTotal">5</span></h3>
+  <a href="checkout.html" class="btn">Proceed to Checkout</a>
+</div>
+</div>
+
+
+
+
+  <!--  -->
+
+  <div class="cart-item">
+    <!-- <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"> -->
+    <img src="css/2.jfif">
+
+    <div>
+      <h4>Fresh Mango</h4>
+      <p>$5 / Kg</p>
+    </div>
+    <span>$5</span>
+  </div>
+
+  <!-- QUANTITY -->
+  <div class="quantity">
+    <button onclick="decreaseQty()" disabled>−</button>
+    <span id="qty">1</span>
+    <button onclick="increaseQty()" disabled>+</button>
+  
+
+  <!-- ITEM TOTAL -->
+  <span class="item-total">$<span id="itemTotal">5</span></span>
+</div>
+
+
+</div>
+
+
+  <div class="cart-total">
+    <h3>Total: $10</h3>
+    <a href="checkout.html" class="btn">Proceed to Checkout</a>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 بيئة تعليم مصغر FruitShop. All Rights Reserved.</p>
+
+  </footer>
+
+  <script>
+    let price = 5;     // سعر المنتج
+    let qty = 1;       // الكمية الحالية
+    
+    function increaseQty() {
+      qty++;
+      updateCart();
+    }
+    
+    function decreaseQty() {
+      if (qty > 1) {
+        qty--;
+        updateCart();
+      }
+    }
+    
+    function updateCart() {
+      document.getElementById('qty').innerText = qty;
+    
+      let total = price * qty;
+      document.getElementById('itemTotal').innerText = total;
+      document.getElementById('cartTotal').innerText = total;
+    }
+    </script>
+    
+
+</body>
+</html>
