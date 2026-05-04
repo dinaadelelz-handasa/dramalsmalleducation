@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> بيئة تعليم مصغر </title>
+
+  <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="icon" href="css/hero-bg-2.jpg"> -->
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">بيئة تعليم <span>مصغر</span></div>
+  
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="ahdaf_env.html">أهداف البيئة</a></li>
+      <li><a href="intro.html">المقدمة</a></li>
+      <li><a href="egraa.html"> المحتوى</a></li>
+      <li><a href="checkout.html">التواصل مع الباحثة</a></li>
+    </ul>
+    <input type="text" style="visibility: hidden;">
+  
+    <!--  ICON -->
+    <a href="cart.html" class="cart-icon">
+      <img src="css/she.jfif" alt="">
+      <img src="css/sh2.jfif" alt="">
+      <!-- <span class="cart-count">2</span> -->
+    </a>
+  </nav>
+
+  <div class="ah-env-main">
+    <div class="container">
+      <div class="row border border-primary border-3 rounded-3 p-5 bg-white fw-bolder">
+        <h3 class="fw-bolder text-white p-2" style="background-color: var(--main-color);">أهداف البيئة</h3>
+        <hr style="height: 5px; width: 200px;background-color: #7e0303;border: none;opacity: 1; margin-top: 10px;">
+
+        <h5 class="mb-4">تنقسم الأهداف في هذه البيئة إلى أهداف عامة المتوقع أن يحققها التلميذ من خلال مروره بهذه البيئة، وأهداف خاصة مشتقة من الأهداف العامة، وأكثر تحديدًا منها.
+          أبرز الأهداف العامة التي تسعى البيئة إلى تحقيقها هي:
+          </h5>
+          <h5 class="mb-4">
+            <li class="mb-4">تنمية مهارات التواصل الشفوي من خلال المواقف الاجتماعية المعروضة في الفيديوهات التي تتضمنها هذه البيئة.</li>
+            <li class="mb-4">تشجيع التلاميذ على استخدام عبارات لغوية ملائمة للمواقف الاجتماعية المختلفة.</li>
+
+            <li class="mb-4">تدريب التلاميذ على استخدام الفصحى في مواقف (الاستئذان، الاعتذار، الطلب، التهنئة، الشكر، زيارة مريض، مواساة، تحية).</li>
+
+
+            <li class="mb-4">تمكين التلميذ من التعبير عن رأيه مع احترام آراء الآخرين مستخدمًا الأدلة والبراهين.</li>
+
+
+          </h5>
+
+
+          
+      </div>
+      
+      <h3 class="fw-bolder mt-5 text-black" style="background-color: var(--main-color);">الاستراتيجيات التعليمية المستخدمة</h3>
+          <hr style="height: 5px; width: 200px;background-color: #7e0303;border: none;opacity: 1; margin-top: 10px;">
+          <table class="table table-bordered mt-5 mb-5">
+            <tr>
+              <td>تمثيل الأدوار</td>
+              <td>العصف الذهني</td>
+              <td>التعليم المصغر</td>
+            </tr>
+          </table>
+     
+
+
+    </div>
+
+  </div>
+  
+
+
+
+
+<!-- FOOTER -->
+<footer>
+  <p>بيئة تعليم مصغر</p>
+
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.hero-slide');
+  let current = 0;
+  
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+  
+  setInterval(showNextSlide, 4000);
+  </script>
+  
+
+</body>
+</html>
